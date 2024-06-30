@@ -16,38 +16,97 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif:ital,wght@0,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-  </head>
 
+    <title>Corgi's Coffee</title>
+  </head>
   <body>
     <div class="page">
       <header class="header">
-        <h1>Corgi's Coffee</h1>
+        <nav class="nav">
+          <img
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="Logo of coffee Shop"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li>
+              <a href="#recipes" class="nav__link">Recipes</a>
+            </li>
+            <li>
+              <a href="#menu" class="nav__link">Menu</a>
+            </li>
+            <li>
+              <a href="#reservation" class="nav__link">Book a table</a>
+            </li>
+            <li>
+              <a href="#about" class="nav__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="header__title">
+          <span class="header__span-accent">Specialty coffee</span> in the
+          Triple Peaks Library
+        </h1>
+        <p class="header__description">
+          Welcome to our study zone! We've got the coffee to energize you and
+          the cozy vibes to help you get creative.
+        </p>
+        <img
+          src="./images/inside_coffee_shop.png"
+          alt="Picture of coffee shop interior"
+          class="header__image"
+        />
+        <div class="header__footer">
+          <div>
+            <p class="header__paragraph">Hours:</p>
+            <p class="header__paragraph">Monday – Friday (10:00 – 19:00)</p>
+            <p class="header__paragraph">Saturday – Sunday (11:00 –18:00)</p>
+          </div>
+          <p class="header__paragraph">
+            200 Success Avenue, The Town of Triple Peaks
+          </p>
+        </div>
       </header>
-
       <main class="content">
         <section id="recipes" class="recipes">
-          <h2>Recipes</h2>
+          <h2 class="recipes__title">Recipes</h2>
+          <p class="recipes__subtitle">
+            <span class="recipes__subtitle-space">
+              Check out some recipes we've collected for</span
+            >
+            your home-brewing convenience:
+          </p>
+          <div class="recipes__videos">
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/j6VlT_jUVPc?si=vDpcFWQQzk6GyT5i"
+                class="recipes__iframe"
+                allowfullscreen
+              ></iframe>
+              <p class="recipes__video-caption">
+                <span>Aeropress recipe</span> ~5 min
+              </p>
+            </div>
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/st571DYYTR8?si=lVR5_tcsfnwo0JaW"
+                class="recipes__iframe"
+                allowfullscreen
+              ></iframe>
+              <p class="recipes__video-caption">
+                <span>French press recipe</span> ~15min
+              </p>
+            </div>
+          </div>
         </section>
-
-        <section id="reservation" class="reservation">
-          <h2>Reservation</h2>
-        </section>
-
-        <section id="menu" class="menu">
-          <h2>Menu</h2>
-        </section>
-
-        <section id="about" class="about">
-          <h2>About</h2>
-        </section>
+        <section id="reservation" class="reservation"></section>
+        <section id="menu" class="menu"></section>
+        <section id="about" class="about"></section>
       </main>
-
-      <footer class="footer" id="footer">
-        <p class="footer__copyright">&copy; Dylan Dunn</p>
-      </footer>
+      <footer class="footer"></footer>
     </div>
   </body>
 </html>
